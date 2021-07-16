@@ -1,0 +1,198 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"  href="{%  static  'home/css/style.css' %}">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" />
+    <link href="//db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet" type="text/css"/>
+    <!--<link href="{% static '/home/webfonts' %}" rel="stylesheet" type="text/css"> -->
+    <!--<link href="{% static 'fontawesome_free/css/all.min.css' %}" rel="stylesheet" type="text/css"> -->
+    <title>Agriola</title>
+    <link rel="icon" href="{% static 'img/logoz-removebgb.png'%}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  navbarColor">
+        <a class="navbar-brand" href="{% url 'home2' %}" id="barndColor">AGRIOLA <img  src="{% static 'img/logoz-removebgb.png'%}" width="40" height="40" class=" ml-2 d-inline-block align-baseline" alt="">
+        </a>
+        <button class="navbar-toggler btn btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto mr-4">
+
+                <li class="nav-item ">
+                    <a class="nav-link " href="{% url 'home2' %}">
+                        <h4>Home</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'features' %}">
+                        <h4>Features</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'pricing' %}">
+                        <h4>Pricing</h4>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link current" href="{% url 'about' %}">
+                        <h4>About</h4><span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container-fluid p-0" id="firstSec_A" style="background: url('/static/img/pic4.png') no-repeat center; background-size: cover;">
+        
+        <div class="transparent">
+            <div class="container">
+                <div class="row pt-5  pb-5 justify-content-center">
+                    <div class="col-12 m-auto">
+                        <p>AGRIOLA is a platform that introduces remote sensing and deep learning to detect land cover change over the past 35 years. Monitoring agricultural land cover change in Delta Egypt using a computer vision-based deep learning model to detect and provide monthly insights of illegal actions mainly construction for decision-makers once satellite imagery is available. The next stage in our product will be land cover change forecasting.
+                            The web application provides change detection service along with a geospatial analytics platform to observe time series analysis over the years of water, vegetation, and NDVI.
+                            AGRIOLA also has a mobile application for precision agriculture services.                            
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container  p-5" id="whyUs">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <h3>Why Us? </h3>
+            </div>
+        </div>
+        <div class="row pt-2 justify-content-center align-items-start">
+            <div class="col-12 ">
+                <p class="">
+                    We provide change detection services with instant results using satellite images that are updated every two weeks, so you don’t have to wait for reports that are not frequently released.This service is not provided by our local competitors.
+                    We provide precision agriculture services such as detection of plant diseases simply by taking a photo using your phone, crop yield estimation so farmers can take precautions in case of an expected low crop.
+                    Our services are available in egypt with very affordable prices.                    
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    
+    <div id="contactUs" style="background: url('/static/img/pic5.png') no-repeat center; background-size: cover;">
+        <div class="transparent">
+            <div class="d-flex align-items-center align-content-center contact-clean">
+                <form class="text-dark" data-bss-recipient="12223ac6677c1d072c3a5614f27bf1e1">
+                    <h2 class="text-center">Contact us</h2>
+                    <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" required=""></div>
+                    <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" required=""></div>
+                    <div class="form-group"><input class="form-control" type="phone" name="phone" placeholder="Phone" required=""></div>
+                    <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14" required="" minlength="10"></textarea></div>
+                    <div class="form-group text-center"><button class="btn btn-primary" type="submit">send </button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid " id="footer">
+        <div class="row justify-content-center">
+
+            <div class="col-10 mt-3 mb-1">
+                <div class="row justify-content-center">
+                    <div class="col-auto mr-5  ">
+                        <img src="{% static 'img/logoz-removebgb.png' %}" width="150px" alt="" class="mr-2">
+                    </div>
+                    <div class="col-3 ml-4">
+                        <div class="row pt-1 ml-3">
+                            <h4>LINKS</h4>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">About</a>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">Services</a>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">Products</a>
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <div class="row pt-1 ml-3 ">
+                            <h4>SOCIAL</h4>
+                        </div>
+                        <div class="d-flex  findUS ml-3 ">
+                            <div class=" mt-1  mr-3"><i class="fab fa-facebook"></i></div>
+                            <div class=" mt-1 "><a href=#>Agriola</a></div>
+                        </div>
+                        <div class=" d-flex  findUS ml-3">
+                            <div class=" mt-1  mr-3"><i class="fab fa-twitter"></i>
+                            </div>
+                            <div class=" mt-1 "><a href=#>@Agriola</a></div>
+                        </div>
+                        <div class="d-flex  findUS ml-3">
+                            <div class=" mt-1 mr-3"><i class="fab fa-instagram"></i>
+                            </div>
+                            <div class=" mt-1 "><a href=#>@Agriola</a></div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row pt-1 ml-2">
+                            <h4>FIND US</h4>
+                        </div>
+                        <div class="d-flex align-items-baseline findUS ml-3 ">
+                            <div class="mt-1 mr-3"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class=" mt-1 "><a href=" https://goo.gl/maps/4NZnd5FeosFxU8Ef9 ">Faculty of Engineering Mansoura University</a></div>
+                        </div>
+                        <div class="d-flex a  findUS ml-3 pt-3 pt-2">
+                            <div class="mr-3 mt-1">
+                                <i class=" fas fa-phone-alt "></i>
+                            </div>
+                            <div class=" mt-1 ">
+                                <a href=”tel:+14123815500″>1 (412) 381-5500</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row justify-content-center pl-5">
+            <h4 style="font-size: 10px;"> <i class=" far fa-copyright mr-2" style="font-size: 10px;"></i>2020-2021 Agriola. All Rights Reseved
+            </h4>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="{% static 'home/js/script.js' %} "></script>
+    <script src="{% static 'home/js/popper.min.js' %} "></script>
+
+   
+</body>
+
+</html> 
+<!-- --> 
